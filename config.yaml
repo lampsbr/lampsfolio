@@ -51,7 +51,7 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: I'm a software developer! I love to be learning new stuff and to work in teams, even if the only available team is github copilot. 
+    description: I'm a software developer! I love to be learning new stuff and to work in teams, even if sometimes the only available team is github copilot. 
   experience:
     title: Experiences
     icon: fas fa-briefcase
