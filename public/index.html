@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>LampsFolio</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Portfolio site of Bruno Lamps" />
+<meta name="author" content="Bruno Lamps" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.125.0" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+
+
+
+<link href="/main.css" rel="stylesheet" />
+
+
+  
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="http://localhost:1313/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">Blog</a>
+  </div>
+  
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
+      <div class="flex flex-col justify-center">
+        <div class=""><div class="w-100 h-100 flex justify-center p-4">
+  <img
+    class="rounded rounded-full"
+    src="/images/profile.jpg"
+    alt="Bruno Lamps"
+    style="max-width: 250px"
+  />
+</div>
+</div>
+        <div class="p-2 text-center">
+          <h1 class="mb-0">Bruno &#39;Lamps&#39; Menezes</h1>
+<h2 class="mb-0">Software Developer</h2>
+<h3 class="mb-4">Aracaju. Brazil</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.linkedin.com/in/bsmenezes88/">
+      <i class="mt-1 fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://stackoverflow.com/users/2600554/bruno-lamps">
+      <i class="mt-1 fab fa-stack-overflow"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://github.com/lampsbr">
+      <i class="mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+</div>
+ <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  pt-2 ">
+  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a>, <a href="https://themes.gohugo.io/themes/aafu/">aafu theme</a> &amp; <a href="https://www.cloudflare.com/">Cloudflare</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+</footer>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-span-3 relative">
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion active">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-user"></i>
+          About Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  I&rsquo;m a software developer! I love to be learning new stuff and to work in teams, even if the only available team is github copilot.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-briefcase"></i>
+          Experiences</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4 style="text-decoration: underline;">Software Engineer</h4>
+<p class="mb-0">
+  2017 - <em>Present</em> &middot; 
+  <a href="https://www.tce.se.gov.br/">Audit Office of Sergipe</a>
+  
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Tech Lead for development and maintenance of a govt web portal</li>
+<li>Modular application with dozen different technologies</li>
+<li>Vue.js, Bootstrap, .NET, SQL Server, Java, Elastic, Hangfire etc</li>
+</ul>
+
+</div>
+
+
+
+<h4 style="text-decoration: underline;">Software Engineer</h4>
+<p >
+  2015 - 2017 &middot; 
+  <a href="https://www.deso-se.com.br/">Water Company of Sergipe</a>
+  
+</p>
+
+
+
+<h4 style="text-decoration: underline;">Network Analyst</h4>
+<p >
+  2015 &middot; 
+  <a href="https://emgetis.se.gov.br/">Emgetis</a>
+  
+</p>
+
+
+
+<h4 style="text-decoration: underline;">Java Developer</h4>
+<p >
+  2014 &middot; 
+  <a href="https://ufs.br/">UFS</a>
+  
+</p>
+
+
+
+<h4 style="text-decoration: underline;">Java Developer</h4>
+<p >
+  2012 - 2013 &middot; 
+  <a href="https://www.aracaju.se.gov.br/">City&#39;s Health Department</a>
+  
+</p>
+
+
+
+<h4 style="text-decoration: underline;">Retail IT analyst</h4>
+<p >
+  2010 - 2011 &middot; 
+  <a href="https://www.pisolar.com.br/">Pisolar</a>
+  
+</p>
+
+
+
+<h4 style="text-decoration: underline;">Intern web developer</h4>
+<p >
+  2009 &middot; 
+  <a href="https://www.linkedin.com/company/lbs-local/?originalSubdomain=br">LBS Local</a>
+  
+</p>
+
+
+
+<h4 style="text-decoration: underline;">Intern</h4>
+<p >
+  2008 &middot; 
+  <a href="https://www.userede.com.br/">Rede</a>
+  
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-graduation-cap"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">Bachelor of Technology</h4>
+<p >2006 - 2009 &middot; Mackenzie Presbiterian University</p>
+
+
+
+<h4 style="text-decoration: underline;">Bachelor of Economics</h4>
+<p >2020 - 2023 &middot; Cesumar University</p>
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-book"></i>
+          Courses</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+
+<h4 style="text-decoration: underline;">Udemy</h4><p class="foo indent-8">2023.
+
+
+<a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps">
+  <em>Flutter &amp; Dart - The Complete Guide.</em>
+</a>
+
+
+Maximilian Schwarzmüller.
+</p>
+<p class="foo indent-8">2021.
+
+
+<a href="https://www.udemy.com/course/react-tutorial-and-projects-course">
+  <em>React 18 Tutorial and Projects Course.</em>
+</a>
+
+
+John Smilga.
+</p>
+<p class="foo indent-8">2019.
+
+
+<a href="https://www.udemy.com/course/nestjs-zero-to-hero">
+  <em>NestJS - From Zero to Hero.</em>
+</a>
+
+
+Ariel Weinberger.
+</p>
+
+
+<h4 style="text-decoration: underline;">Alura</h4><p class="foo indent-8">2019.
+
+
+<em>Vue.js 2.</em>
+
+
+.
+</p>
+<p class="foo indent-8">2018.
+
+
+<em>Express.js.</em>
+
+
+.
+</p>
+<p class="foo indent-8">2017.
+
+
+<em>Docker.</em>
+
+
+.
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-project-diagram"></i>
+          Projects</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4>
+  <a href="#">This Portfolio (2024)</a>
+</h4>
+<p class="markdownify indent-8">Crafted in few hours using Hugo and aafu theme. First experience with all technologies, including Go and Cloudflare.</p>
+
+<h4>
+  <a href="https://www.tcese.tc.br/sagres-producao/login.xhtml">Portal do Jurisdicionado (2017 -)</a>
+</h4>
+<p class="markdownify indent-8">Government web portal designed to aid communications and workflow between local audit office and mayors, legislators, laywers, accounting offices etc</p>
+
+<h4>
+  <a href="#">NDA warehouse system (2023)</a>
+</h4>
+<p class="markdownify indent-8">Web application to manage ecommerce-related warehouse operations. Features barcode scanning, in-browser OCR, audio capacities etc</p>
+
+<h4>
+  <a href="https://torliga.com">Torliga (2022 - 2023)</a>
+</h4>
+<p class="markdownify indent-8">Promotions and gaming platform. Integrated with telecom APIs, antifraud systems, football APIs. Project built from scratch using NestJS, VueJS, Postgres, Redis, Bull among other technologies</p>
+
+<h4>
+  <a href="#">NDA startup social network (2021)</a>
+</h4>
+<p class="markdownify indent-8">Wrote a ton of features for a retired social network startup. Features included chat, admin portal, signup process, feed, groups etc. Tech stack included cloud providers, NestJS, React, NextJS, Lightning, Bootstrap, Helmet, Fastify, GraphQL among others</p>
+
+<h4>
+  <a href="https://msltracker.web.app">Poop quality tracker (2020 / hobby)</a>
+</h4>
+<p class="markdownify indent-8">WebApp written using Vue.JS 2, bootstrap-vue and firebase. Features social login, only one useful feature and that Json database they love. I started rewritting it, hope to finish it before Stallman&rsquo;s GNU OS</p>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-gamepad"></i>
+          Hobbies</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Watching esports</li>
+  
+  <li class="list-unstyled mb-2">Running</li>
+  
+  <li class="list-unstyled mb-2"></li>
+  
+  <li class="list-unstyled mb-2">Cooking salad</li>
+  
+  <li class="list-unstyled mb-2">Mobile gaming</li>
+  
+  <li class="list-unstyled mb-2">Music (if too loud)</li>
+  
+</ul>
+</div>
+      </div>
+    </div>
+    
+
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>

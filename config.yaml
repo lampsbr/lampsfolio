@@ -1,14 +1,13 @@
-baseURL: https://aafu.pages.dev/
+baseURL: https://lampsfolio.pages.dev/
 languageCode: en-us
 build:
   writeStats: true
 params:
-  title: aafu theme
-  author: Darshan Baral
-  description: Website title
+  title: LampsFolio
+  author: Bruno Lamps
+  description: Portfolio site of Bruno Lamps
   copyright: >-
-    powered by [hugo](https://gohugo.io/) & deployed on
-    [Cloudflare](https://www.cloudflare.com/)
+    powered by [hugo](https://gohugo.io/), [aafu theme](https://themes.gohugo.io/themes/aafu/) & [Cloudflare](https://www.cloudflare.com/)
   theme:
     mainTheme: dark
     showAttribute: true
@@ -24,34 +23,22 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
-    tagline: Title
-    location: "City Name, ST"
+    name: "Bruno 'Lamps' Menezes"
+    tagline: Software Developer
+    location: "Aracaju. Brazil"
     photo: profile.jpg
   social:
     title: Links
     list:
       - icon: fab fa-linkedin-in
-        url: "#"
+        url: "https://www.linkedin.com/in/bsmenezes88/"
         title: LinkedIn
       - icon: fab fa-stack-overflow
-        url: "#"
+        url: "https://stackoverflow.com/users/2600554/bruno-lamps"
         title: StackOverflow
       - icon: fab fa-github
-        url: "#"
+        url: "https://github.com/lampsbr"
         title: GitHub
-      - icon: fab fa-twitter
-        url: "#"
-        title: Twitter
-      - icon: fab fa-orcid
-        url: "#"
-        title: Orcid
-      - icon: ai ai-google-scholar
-        url: "#"
-        title: Google Scholar
-      - icon: fab fa-researchgate
-        url: "#"
-        title: ResearchGate
   showInAccordion:
     - item: aboutme
       expand: true
@@ -59,97 +46,124 @@ params:
     - item: education
     - item: publication
     - item: project
-    - item: skill
+    #- item: skill
     - item: hobby
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
+    description: I'm a software developer! I love to be learning new stuff and to work in teams, even if the only available team is github copilot. 
   experience:
     title: Experiences
     icon: fas fa-briefcase
     list:
-      - position: Job Title
-        dates: 2019 - *Present*
-        company: Company Name
+      - position: Software Engineer
+        dates: 2017 - *Present*
+        company: Audit Office of Sergipe
+        url: "https://www.tce.se.gov.br/"
         details: |1-
-          - Printed from desktop. Sent [emails](#).
-              - Called people *using* telephone.
-          - Drank water from office cooler.
-          - Ate donuts on people's birthdays.
-      - position: Job Title
-        dates: 2018 - 2019
-        url: "#"
-        company: Company Name
+          - Tech Lead for development and maintenance of a govt web portal
+          - Modular application with dozen different technologies
+          - Vue.js, Bootstrap, .NET, SQL Server, Java, Elastic, Hangfire etc
+      - position: Software Engineer
+        dates: 2015 - 2017
+        company: Water Company of Sergipe
+        url: "https://www.deso-se.com.br/"
+      - position: Network Analyst
+        dates: 2015
+        url: "https://emgetis.se.gov.br/"
+        company: Emgetis
+      - position: Java Developer
+        dates: 2014
+        url: "https://ufs.br/"
+        company: UFS
+      - position: Java Developer
+        dates: 2012 - 2013
+        url: "https://www.aracaju.se.gov.br/"
+        company: City's Health Department
+      - position: Retail IT analyst
+        dates: 2010 - 2011
+        url: "https://www.pisolar.com.br/"
+        company: Pisolar
+      - position: Intern web developer
+        dates: 2009
+        url: "https://www.linkedin.com/company/lbs-local/?originalSubdomain=br"
+        company: LBS Local
+      - position: Intern
+        dates: 2008
+        url: "https://www.userede.com.br/"
+        company: Rede
   education:
     title: Education
     icon: fas fa-graduation-cap
     list:
-      - degree: Ph.D. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: M.S. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: B.S. in Subject
-        college: University of State-City
-        dates: 2004 - 2009
+      - degree: Bachelor of Technology
+        college: Mackenzie Presbiterian University
+        dates: 2006 - 2009
+      - degree: Bachelor of Economics
+        college: Cesumar University
+        dates: 2020 - 2023
   publication:
-    title: Publications
+    title: Courses
     icon: fas fa-book
     format:
       - date
       - title
       - authors
-      - journal
     types:
-      - Journal Articles
-      - Proceedings
+      - Udemy
+      - Alura
     list:
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
+          Vue.js 2
+        date: "2019"
+        type: Alura
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
+          Express.js
         date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
+        type: Alura
+      - title: Docker
+        date: "2017"
+        type: Alura
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Proceedings
+          Flutter & Dart - The Complete Guide
+        date: "2023"
+        url: "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps"
+        authors: Maximilian Schwarzmüller
+        type: Udemy
+      - title: >-
+          React 18 Tutorial and Projects Course
+        date: "2021"
+        url: "https://www.udemy.com/course/react-tutorial-and-projects-course"
+        authors: John Smilga
+        type: Udemy
+      - title: >-
+          NestJS - From Zero to Hero
+        date: "2019"
+        url: "https://www.udemy.com/course/nestjs-zero-to-hero"
+        authors: Ariel Weinberger
+        type: Udemy
   project:
     title: Projects
     icon: fas fa-project-diagram
     list:
-      - title: Project 1
+      - title: This Portfolio (2024)
         url: "#"
-        description: Description of the project
-      - title: Project 2
+        description: Crafted in few hours using Hugo and aafu theme. First experience with all technologies, including Go and Cloudflare. 
+      - title: Portal do Jurisdicionado (2017 -)
+        url: "https://www.tcese.tc.br/sagres-producao/login.xhtml"
+        description: Government web portal designed to aid communications and workflow between local audit office and mayors, legislators, laywers, accounting offices etc
+      - title: NDA warehouse system (2023)
         url: "#"
-        description: Description of the project
-      - title: Project 3
+        description: Web application to manage ecommerce-related warehouse operations. Features barcode scanning, in-browser OCR, audio capacities etc
+      - title: Torliga (2022 - 2023)
+        url: "https://torliga.com"
+        description: Promotions and gaming platform. Integrated with telecom APIs, antifraud systems, football APIs. Project built from scratch using NestJS, VueJS, Postgres, Redis, Bull among other technologies
+      - title: NDA startup social network (2021)
         url: "#"
-        description: Description of the project
-      - title: Project 4
-        url: "#"
-        description: Description of the project
+        description: Wrote a ton of features for a retired social network startup. Features included chat, admin portal, signup process, feed, groups etc. Tech stack included cloud providers, NestJS, React, NextJS, Lightning, Bootstrap, Helmet, Fastify, GraphQL among others
+      - title: Poop quality tracker (2020 / hobby)
+        url: "https://msltracker.web.app"
+        description: WebApp written using Vue.JS 2, bootstrap-vue and firebase. Features social login, only one useful feature and that Json database they love. I started rewritting it, hope to finish it before Stallman's GNU OS
   skill:
     title: Skills
     panelId: skill-panel
@@ -165,6 +179,9 @@ params:
     title: Hobbies
     icon: fas fa-gamepad
     list:
-      - hobby: Cooking
-      - hobby: Hiking
-      - hobby: Baking
+      - hobby: Watching esports
+      - hobby: Running
+      - Hobby: Swimming
+      - hobby: Cooking salad
+      - hobby: Mobile gaming
+      - hobby: Music (if too loud)

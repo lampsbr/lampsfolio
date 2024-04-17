@@ -1,16 +1,12 @@
 ---
-title: "luctus enim ultricies auctor pulvinar nam etiam"
-date: 2018-01-06
-tags: ["mollis urna", "notes", "laoreet"]
-categories: ["diam aliqua", "fringilla"]
-description: "dictum tellus sapien vitae integer justo amet mauris cras bolestie sollicitudin dignissim"
+title: "Should I blog?"
+date: 2024-04-17
+tags: ["bio", "notes"]
+categories: ["slice of life"]
+description: "this description apparently does not show up anywhere"
 draft: false
 ---
 
-# donec lacinia eleifend sem a
+# I loved to blog back in college, I had time, had something to say...
 
-Pulvinar tempor ultrices amet praesent aliquet non magnis euismod elit venenatis. Aliqua consequat tristique erat nulla sit risus aliqua posuere. Potenti natoque augue proin accimsan risus scelerisque id integer curabitur mattis amet quisque. Aliquet porta sit sapien natoque sed fringilla, madssa suspendisse vivamus placerat sociis condimentum ridiculus. Natoque egestas non lectus pellentesque nunc mattis eu ridiculus pretium maecenas ligula. Gravida facilisis sem mollis sagittis aliquet ornare bibendum, leo nec morbi tortor diam maecenas tempor.
-
-Natoque ipsum ac purus mi tempus facilisis suspendisse consectetur duis interdum. Potenti vel accimsan fringilla vestibulum neque odio, lacinia duis facilisi turpis consectetur sollicitudin eleifend. Netus posuere et aliquet mauris lacinia habitant lacus imperdiet. Mollis auctor facilisi commodo maecenas condimentum convallis, pretium in consequat velit vel ipsum posuere. Est mollis imperdiet proin vel iaculis aliquam lorem, nibh mattis magna commodo consequat convallis volutpat. Vel gravida purus sagittis nunc netus aliquam quis facilisi magnis.
-
-Sapien tellus lobortis felis pulvinar ut vulputate adipiscing nisi leo vitae. Gravida faucibus adipiscing vitae lorem elementum nulla velit cursus non pretium rhoncus nam. Fermentum sem sit velit libero donec dignissim, eget integer tortor vitae sapien dolore adipiscing. Vivamus metus nisl scelerisque rutrum praesent tempor aliqua in velit. Erat auctor fames mus mi pulvinar nulla porta rhoncus. Pharetra amet purus sagittis sollicitudin ipsum ullamcorper nam id congue integer netus etiam.
+And also I knew what to use as subtitle/chapeau! Clearly you can't save all skills after neglecting them for about 15 years. But it is exciting to have a place to write something. Ops, just forgot I can post in 700 different social networks. I hope this Hugo engine features RSS integration somewhere. I'm a big fan of Aaron Swartz works, I miss the web2 google reader days, and I still try to use it's best successor, Inoreader!
